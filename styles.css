@@ -1,0 +1,1277 @@
+/* Material You 3 Design System - Custom Palette (Reworked to Neutral Green) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+/* --- PALETTE DEFINITION --- */
+/* Scuro (Primary): #386641 */
+/* Medio (Secondary/Bordi): #6A994E */
+/* Chiaro (Tertiary/Accenti): #A7C957 */
+/* Bianco Crema (Background/Surface): #F2E8CF */
+/* Nuovo Sfondo Scuro: #11151C */
+
+:root {
+    /* --- LIGHT MODE (Tutta la palette è neutra e fissa) --- */
+
+    /* Primary: Usiamo il Blu Scuro per elementi forti su sfondo chiaro */
+    --md-sys-color-primary: #386641;
+    /* Verde Scuro */
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #6A994E;
+    /* Verde Medio */
+    --md-sys-color-on-primary-container: #386641;
+    /* Verde Scuro su Medio */
+
+    /* Secondary: Il Corallo diventa Verde Medio */
+    --md-sys-color-secondary: #6A994E;
+    /* Verde Medio */
+    --md-sys-color-on-secondary: #386641;
+    --md-sys-color-secondary-container: #A7C957;
+    /* Verde Chiaro */
+    --md-sys-color-on-secondary-container: #386641;
+
+    /* Tertiary: Il Lime diventa Verde Chiaro (Accento) */
+    --md-sys-color-tertiary: #A7C957;
+    /* Verde Chiaro */
+    --md-sys-color-on-tertiary: #386641;
+    /* Testo scuro su Chiaro */
+    --md-sys-color-tertiary-container: #F2E8CF;
+    /* Bianco Crema */
+    --md-sys-color-on-tertiary-container: #386641;
+
+    /* Error Colors */
+    --md-sys-color-error: #BA1A1A;
+    /* Rosso standard per l'errore */
+    --md-sys-color-on-error: #FFFFFF;
+    --md-sys-color-error-container: #FFDAD6;
+    --md-sys-color-on-error-container: #410002;
+
+    /* Surface & Background */
+    --md-sys-color-background: #F2E8CF;
+    /* Bianco Crema */
+    --md-sys-color-on-background: #386641;
+    /* Testo Verde Scuro */
+
+    --md-sys-color-surface: #FFFFFF;
+    /* Bianco puro per le card */
+    --md-sys-color-on-surface: #386641;
+
+    --md-sys-color-surface-variant: #E8F0E4;
+    /* Una tonalità neutra molto chiara */
+    --md-sys-color-on-surface-variant: #6A994E;
+    /* Verde Medio per testo secondario */
+
+    --md-sys-color-outline: #6A994E;
+    /* Verde Medio per i bordi */
+    --md-sys-color-outline-variant: #C9D9C1;
+    /* Bordo molto sottile e neutro */
+
+    /* Shadows (Basate sul colore Scuro per un effetto neutro) */
+    --md-sys-elevation-1: 0 1px 3px rgba(56, 102, 65, 0.12), 0 1px 2px rgba(56, 102, 65, 0.24);
+    --md-sys-elevation-2: 0 3px 6px rgba(56, 102, 65, 0.15), 0 3px 6px rgba(56, 102, 65, 0.20);
+    --md-sys-elevation-3: 0 10px 20px rgba(56, 102, 65, 0.15), 0 6px 6px rgba(56, 102, 65, 0.20);
+    --md-sys-elevation-4: 0 14px 28px rgba(56, 102, 65, 0.20), 0 10px 10px rgba(56, 102, 65, 0.18);
+
+    /* Typography (Mantenuti Roboto) */
+    --md-sys-typescale-display-large: 700 57px/64px 'Roboto', sans-serif;
+    --md-sys-typescale-headline-large: 700 32px/40px 'Roboto', sans-serif;
+    --md-sys-typescale-headline-medium: 500 28px/36px 'Roboto', sans-serif;
+    --md-sys-typescale-title-large: 500 22px/28px 'Roboto', sans-serif;
+    --md-sys-typescale-title-medium: 500 16px/24px 'Roboto', sans-serif;
+    --md-sys-typescale-body-large: 400 16px/24px 'Roboto', sans-serif;
+    --md-sys-typescale-body-medium: 400 14px/20px 'Roboto', sans-serif;
+    --md-sys-typescale-label-large: 500 14px/20px 'Roboto', sans-serif;
+
+    /* Spacing & Radius (Mantenuti) */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 9999px;
+
+    /* Transitions (Mantenuti) */
+    --transition-fast: 150ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    --transition-medium: 250ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* 🌙 --- DARK THEME (Modificato per Sfondo #11151C) --- 🌙 */
+body.dark-theme {
+    /* Background & Surface: Colore molto scuro #11151C */
+
+    /* Primary: Verde Chiaro (Accento principale su sfondo scuro) */
+    --md-sys-color-primary: #A7C957;
+    /* Verde Chiaro (Accento) */
+    --md-sys-color-on-primary: #11151C;
+    /* Testo Scuro su Accento */
+    --md-sys-color-primary-container: #6A994E;
+    /* Verde Medio */
+    --md-sys-color-on-primary-container: #11151C;
+    /* Testo Scuro su Medio */
+
+    /* Secondary: Verde Medio */
+    --md-sys-color-secondary: #6A994E;
+    --md-sys-color-on-secondary: #F2E8CF;
+    /* Bianco Crema */
+    --md-sys-color-secondary-container: #386641;
+    /* Verde Scuro */
+    --md-sys-color-on-secondary-container: #A7C957;
+
+    /* Tertiary: Verde Chiaro (Accento secondario) */
+    --md-sys-color-tertiary: #A7C957;
+    --md-sys-color-on-tertiary: #11151C;
+    --md-sys-color-tertiary-container: #6A994E;
+    --md-sys-color-on-tertiary-container: #F2E8CF;
+
+    /* Error (Mantenuto) */
+    --md-sys-color-error: #FFB4AB;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000A;
+    --md-sys-color-on-error-container: #FFDAD6;
+
+    /* Surface & Background */
+    --md-sys-color-background: #11151C;
+    /* NUOVO Sfondo molto Scuro */
+    --md-sys-color-on-background: #F2E8CF;
+    /* Testo Bianco Crema */
+
+    --md-sys-color-surface: #1C232D;
+    /* Tonalità leggermente più chiara di #11151C per le card/superfici elevate */
+    --md-sys-color-on-surface: #F2E8CF;
+
+    --md-sys-color-surface-variant: #386641;
+    /* Verde Scuro per elementi secondari */
+    --md-sys-color-on-surface-variant: #E8F0E4;
+    /* Testo/Icone chiare su Verde Scuro */
+
+    --md-sys-color-outline: #6A994E;
+    /* Verde Medio per i bordi */
+    --md-sys-color-outline-variant: #386641;
+    /* Verde Scuro per bordi sottili */
+
+    /* Shadows (Adattate per sfondi scuri, usando una tonalità di blu scuro/verde) */
+    --md-sys-elevation-1: 0 1px 3px rgba(167, 201, 87, 0.05), 0 1px 2px rgba(167, 201, 87, 0.1);
+    --md-sys-elevation-2: 0 3px 6px rgba(167, 201, 87, 0.08), 0 3px 6px rgba(167, 201, 87, 0.15);
+    /* Rimosse le vecchie ombre scure per coerenza con lo sfondo profondo */
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: var(--md-sys-typescale-body-large);
+    background: var(--md-sys-color-background);
+    color: var(--md-sys-color-on-background);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color var(--transition-medium), color var(--transition-medium);
+}
+
+/* Main Container */
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header with Material You 3 Style - ELIMINATO GRADIENTE */
+.app-header {
+    /* Nessun Gradiente: Colore Solido */
+    background: var(--md-sys-color-primary);
+    /* Verde Scuro (o Verde Chiaro in Dark Mode) */
+    color: var(--md-sys-color-on-primary);
+    padding: var(--space-lg) var(--space-xl);
+    box-shadow: var(--md-sys-elevation-1);
+    /* Ridotta ombra */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* Rimosso blur e mantenuto solido per coerenza minimalista */
+}
+
+/* Dark mode header più scuro per contrasto */
+body.dark-theme .app-header {
+    background: var(--md-sys-color-surface);
+    /* Tonalità scura per Header (#1C232D) */
+    border-bottom: 1px solid var(--md-sys-color-outline-variant);
+    /* Sottile linea neutra */
+    color: var(--md-sys-color-on-surface);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.app-title {
+    font: var(--md-sys-typescale-headline-large);
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+    letter-spacing: -0.5px;
+}
+
+.app-subtitle {
+    font: var(--md-sys-typescale-body-medium);
+    opacity: 0.9;
+}
+
+/* Header Top Layout */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-md);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    /* Colore neutro chiaro o scuro a seconda del tema */
+    background: var(--md-sys-color-surface-variant);
+    border: 1px solid var(--md-sys-color-outline);
+    color: var(--md-sys-color-on-surface-variant);
+    border-radius: var(--radius-full);
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-medium);
+    /* Rimosso backdrop-filter per semplicità */
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    background: var(--md-sys-color-secondary-container);
+    border-color: var(--md-sys-color-secondary);
+    transform: scale(1.05);
+    /* Mantenuto un piccolo effetto hover */
+}
+
+.theme-icon {
+    position: absolute;
+    font-size: 24px;
+    transition: all var(--transition-medium);
+}
+
+.theme-icon.sun {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.theme-icon.moon {
+    opacity: 0;
+    transform: rotate(180deg) scale(0);
+}
+
+body.dark-theme .theme-icon.sun {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0);
+}
+
+body.dark-theme .theme-icon.moon {
+    opacity: 1;
+    color: var(--md-sys-color-primary);
+    /* Accento Chiaro */
+    transform: rotate(0deg) scale(1);
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.nav-tab {
+    /* Inattivo: Colore neutro (come Sfondo Header) */
+    background: var(--md-sys-color-surface-variant);
+    color: var(--md-sys-color-on-surface-variant);
+    border: none;
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--radius-full);
+    font: var(--md-sys-typescale-label-large);
+    cursor: pointer;
+    transition: all var(--transition-medium);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-tab:hover {
+    background: var(--md-sys-color-secondary-container);
+    transform: none;
+    /* Rimosso translateY(-2px) per minimalismo */
+    color: var(--md-sys-color-on-secondary-container);
+}
+
+.nav-tab.active {
+    background: var(--md-sys-color-primary);
+    /* Sfondo Scuro */
+    color: var(--md-sys-color-on-primary);
+    /* Testo Bianco */
+    font-weight: 700;
+    box-shadow: var(--md-sys-elevation-1);
+}
+
+body.dark-theme .nav-tab.active {
+    background: var(--md-sys-color-primary);
+    /* Accento Chiaro */
+    color: var(--md-sys-color-on-primary);
+    /* Testo Scuro */
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: var(--space-xl);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn var(--transition-medium);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Search Container (Card) */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    background: var(--md-sys-color-surface);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--md-sys-elevation-1);
+    overflow: hidden;
+    border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.search-header {
+    /* Header della card di ricerca: Usa Verde Scuro come separatore */
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    padding: var(--space-xl);
+    border-bottom: 1px solid var(--md-sys-color-outline);
+}
+
+.search-header h2 {
+    font: var(--md-sys-typescale-title-large);
+    color: var(--md-sys-color-on-primary-container);
+    margin-bottom: var(--space-xs);
+}
+
+.search-header p {
+    font: var(--md-sys-typescale-body-medium);
+    color: var(--md-sys-color-on-primary-container);
+}
+
+/* Search Form */
+.search-form {
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+/* Form Groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.form-label {
+    font: var(--md-sys-typescale-label-large);
+    color: var(--md-sys-color-on-surface);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-weight: 500;
+}
+
+.label-icon {
+    color: var(--md-sys-color-primary);
+    font-size: 20px;
+}
+
+.form-hint {
+    font-size: 12px;
+    color: var(--md-sys-color-on-surface-variant);
+    font-style: italic;
+    margin-top: var(--space-xs);
+}
+
+/* Form Row */
+.form-row {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: flex-start;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 0;
+    /* Prevent flex overflow */
+}
+
+/* Swap Button Container & Styles */
+.swap-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    /* Allinea con il campo input (Label + margin) */
+    padding-bottom: 0;
+}
+
+.swap-stops-button {
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    border: 2px solid var(--md-sys-color-outline);
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-medium);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swap-stops-button .material-symbols-outlined {
+    font-size: 28px;
+}
+
+.swap-stops-button:hover {
+    background: var(--md-sys-color-tertiary);
+    color: var(--md-sys-color-on-tertiary);
+    border-color: var(--md-sys-color-tertiary);
+    transform: scale(1.1) rotate(180deg);
+    box-shadow: var(--md-sys-elevation-2);
+}
+
+.swap-stops-button:active {
+    transform: scale(0.95) rotate(180deg);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .swap-button-container {
+        margin-top: 0;
+        align-self: center;
+    }
+
+    .swap-stops-button {
+        transform: rotate(90deg);
+        /* Ruota per indicare scambio verticale */
+        width: 48px;
+        height: 48px;
+    }
+
+    .swap-stops-button:hover {
+        transform: scale(1.1) rotate(270deg);
+    }
+
+    .swap-stops-button:active {
+        transform: scale(0.95) rotate(270deg);
+    }
+}
+
+/* Line Selection Container */
+#line-selection-container {
+    background: var(--md-sys-color-surface-variant);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    margin-top: var(--space-md);
+    border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Radio Buttons/Checkbox (Stili Unificati per minimalismo) */
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--md-sys-color-background);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-medium);
+    position: relative;
+}
+
+.radio-option:hover {
+    border-color: var(--md-sys-color-primary);
+    background: var(--md-sys-color-surface-variant);
+}
+
+/* Custom Checkbox/Radio Styles (risoluzione del bug) */
+.radio-option input[type="radio"],
+.radio-option input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    /* Rimosso opacity: 0; per usare l'input standard con il nostro stile */
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--md-sys-color-outline);
+    border-radius: 50%;
+    /* Radio */
+    position: relative;
+    flex-shrink: 0;
+    transition: all var(--transition-medium);
+    margin: 0;
+    /* Rimuove margini esterni */
+}
+
+.radio-option input[type="checkbox"] {
+    border-radius: var(--radius-sm);
+    /* Quadrato per Checkbox */
+}
+
+
+.radio-option input[type="radio"]:checked,
+.radio-option input[type="checkbox"]:checked {
+    border-color: var(--md-sys-color-primary);
+    background: var(--md-sys-color-primary);
+}
+
+/* Pallino per Radio */
+.radio-option input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--md-sys-color-on-primary);
+}
+
+/* Spunta per Checkbox */
+.radio-option input[type="checkbox"]:checked::after {
+    content: '✓';
+    color: var(--md-sys-color-on-primary);
+    font-size: 14px;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(1px);
+    /* Centratura fine */
+}
+
+
+.radio-option input[type="radio"]:checked~.radio-label,
+.radio-option input[type="checkbox"]:checked~.radio-label {
+    font-weight: 700;
+    color: var(--md-sys-color-primary);
+}
+
+.radio-label {
+    font: var(--md-sys-typescale-body-large);
+    color: var(--md-sys-color-on-surface);
+}
+
+/* Select/Text Inputs (Unified Style) */
+.form-select,
+.form-text,
+.form-time {
+    padding: var(--space-md) var(--space-lg);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    border-radius: var(--radius-md);
+    font: var(--md-sys-typescale-body-large);
+    background: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+    transition: all var(--transition-medium);
+    width: 100%;
+}
+
+.form-select:hover,
+.form-text:hover,
+.form-time:hover {
+    border-color: var(--md-sys-color-primary);
+    background: var(--md-sys-color-surface-variant);
+}
+
+.form-select:focus,
+.form-text:focus,
+.form-time:focus {
+    outline: none;
+    border-color: var(--md-sys-color-primary);
+    box-shadow: 0 0 0 3px var(--md-sys-color-primary-container);
+    /* Glow leggero */
+}
+
+/* Dark Theme Fix per Inputs (perché surface e background sono molto vicini in dark mode) */
+body.dark-theme .form-select,
+body.dark-theme .form-text,
+body.dark-theme .form-time {
+    background: var(--md-sys-color-surface);
+    /* Sfondo Input = Card */
+    border-color: var(--md-sys-color-outline-variant);
+}
+
+body.dark-theme .radio-option {
+    background: var(--md-sys-color-background);
+    /* Sfondo Radio = Sfondo App */
+    border-color: var(--md-sys-color-outline-variant);
+}
+
+body.dark-theme .form-select:hover,
+body.dark-theme .form-text:hover,
+body.dark-theme .form-time:hover {
+    background: var(--md-sys-color-background);
+    /* Hover su input Dark */
+    border-color: var(--md-sys-color-primary);
+}
+
+
+/* Time Range */
+.time-range {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.time-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    flex: 1;
+}
+
+.time-input-group label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.time-separator {
+    font-size: 24px;
+    color: var(--md-sys-color-primary);
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.form-time {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Search Button (Primary) */
+.search-button {
+    background: var(--md-sys-color-primary);
+    /* Verde Scuro */
+    color: var(--md-sys-color-on-primary);
+    border: none;
+    padding: var(--space-lg) var(--space-2xl);
+    border-radius: var(--radius-full);
+    font: var(--md-sys-typescale-label-large);
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    box-shadow: var(--md-sys-elevation-1);
+    transition: all var(--transition-medium);
+    margin-top: var(--space-lg);
+}
+
+.search-button:hover {
+    background: var(--md-sys-color-tertiary);
+    /* Hover Verde Chiaro (Accento) */
+    color: var(--md-sys-color-on-tertiary);
+    transform: translateY(-1px);
+    box-shadow: var(--md-sys-elevation-2);
+}
+
+.search-button:active {
+    transform: translateY(0);
+    box-shadow: var(--md-sys-elevation-1);
+}
+
+/* Results Section */
+.results-section {
+    padding: var(--space-xl);
+    background: var(--md-sys-color-background);
+    min-height: 200px;
+}
+
+.results-header {
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 2px solid var(--md-sys-color-primary);
+}
+
+.results-header h3 {
+    font: var(--md-sys-typescale-title-large);
+    color: var(--md-sys-color-on-background);
+}
+
+/* Results Table */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--md-sys-color-surface);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--md-sys-elevation-1);
+}
+
+.results-table thead {
+    background: var(--md-sys-color-surface-variant);
+}
+
+.results-table th {
+    padding: var(--space-md) var(--space-lg);
+    text-align: left;
+    font: var(--md-sys-typescale-title-medium);
+    color: var(--md-sys-color-on-surface);
+    font-weight: 700;
+}
+
+body.dark-theme .results-table th {
+    color: var(--md-sys-color-on-surface-variant);
+    /* Testo chiaro su Verde Scuro */
+}
+
+.results-table td {
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--md-sys-color-outline-variant);
+    font: var(--md-sys-typescale-body-medium);
+    color: var(--md-sys-color-on-surface);
+}
+
+.results-table tbody tr {
+    transition: background var(--transition-fast);
+}
+
+.results-table tbody tr:hover {
+    background: var(--md-sys-color-secondary-container);
+    /* Verde Chiaro come hover */
+}
+
+.time-highlight {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: var(--md-sys-color-primary);
+    font-weight: 700;
+}
+
+.route-info {
+    font-size: 13px;
+    color: var(--md-sys-color-on-surface-variant);
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Badge Styles - Mapped to Palette */
+.badge {
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+/* Feriale: Standard/Primary Container */
+.badge-F {
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+}
+
+/* Festivo: Secondary (Medio) */
+.badge-H {
+    background: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
+}
+
+/* Giornaliero: Tertiary (Chiaro) */
+.badge-G {
+    background: var(--md-sys-color-tertiary);
+    color: var(--md-sys-color-on-tertiary);
+}
+
+/* Scolastico: Outline style or Surface Variant */
+.badge-S,
+.badge-LS,
+.badge-6S {
+    background: var(--md-sys-color-surface-variant);
+    color: var(--md-sys-color-on-surface-variant);
+    border: 1px solid var(--md-sys-color-outline);
+}
+
+.badge-L,
+.badge-6 {
+    background: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+}
+
+/* Admin Panel */
+.admin-container {
+    background: var(--md-sys-color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    box-shadow: var(--md-sys-elevation-1);
+}
+
+.admin-header h2 {
+    font: var(--md-sys-typescale-headline-medium);
+    color: var(--md-sys-color-on-surface);
+    margin-bottom: var(--space-sm);
+}
+
+.admin-toolbar {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+    flex-wrap: wrap;
+}
+
+.admin-button {
+    background: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    border: none;
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--radius-full);
+    font: var(--md-sys-typescale-label-large);
+    cursor: pointer;
+    transition: all var(--transition-medium);
+    box-shadow: var(--md-sys-elevation-1);
+}
+
+.admin-button:hover {
+    background: var(--md-sys-color-tertiary);
+    /* Hover Verde Chiaro (Accento) */
+    color: var(--md-sys-color-on-tertiary);
+    transform: translateY(-1px);
+}
+
+.admin-button.secondary {
+    background: var(--md-sys-color-surface-variant);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.admin-button.danger {
+    background: var(--md-sys-color-error);
+    color: var(--md-sys-color-on-error);
+}
+
+/* Tables Admin */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--md-sys-color-surface);
+}
+
+.schedule-table th {
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    padding: var(--space-md);
+    text-align: left;
+}
+
+.schedule-table td {
+    padding: var(--space-md);
+    border-bottom: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.schedule-table input {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    /* Sfondo Input: usa surface, non background, per differenziare di più */
+    background: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-background);
+}
+
+body.dark-theme .schedule-table input {
+    background: var(--md-sys-color-background);
+    /* Sfondo molto scuro per input in tabella admin */
+    border-color: var(--md-sys-color-outline);
+}
+
+
+/* Action Buttons Icon */
+.action-button {
+    padding: var(--space-sm) var(--space-md);
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    margin-right: 4px;
+}
+
+.action-button.edit {
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+}
+
+.action-button.delete {
+    background: var(--md-sys-color-error-container);
+    color: var(--md-sys-color-on-error-container);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 21, 28, 0.8);
+    /* Sfondo modale in tinta #11151C */
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+    animation: fadeIn var(--transition-medium);
+}
+
+.modal-content {
+    background: var(--md-sys-color-surface);
+    padding: var(--space-xl);
+    border-radius: var(--radius-xl);
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: var(--md-sys-elevation-3);
+    animation: slideUp var(--transition-medium);
+    border: 1px solid var(--md-sys-color-outline);
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--md-sys-color-outline-variant);
+    border-top-color: var(--md-sys-color-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Alerts */
+.alert {
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+    font: var(--md-sys-typescale-body-medium);
+    animation: slideIn var(--transition-medium);
+}
+
+.alert.success {
+    background: var(--md-sys-color-tertiary-container);
+    /* Verde Chiaro */
+    color: var(--md-sys-color-on-tertiary-container);
+    border-left: 4px solid var(--md-sys-color-tertiary);
+}
+
+.alert.error {
+    background: var(--md-sys-color-error-container);
+    color: var(--md-sys-color-on-error-container);
+    border-left: 4px solid var(--md-sys-color-error);
+}
+
+/* Responsive fixes remain the same */
+@media (max-width: 768px) {
+    .app-header {
+        padding: var(--space-md);
+    }
+
+    .header-top {
+        gap: var(--space-md);
+    }
+
+    .theme-toggle {
+        width: 48px;
+        height: 48px;
+    }
+
+    .main-content {
+        padding: var(--space-md);
+    }
+
+    .nav-tabs {
+        flex-wrap: wrap;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .time-range {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ========== SETTINGS PANEL STYLES ========== */
+
+.settings-container {
+    background: var(--md-sys-color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    box-shadow: var(--md-sys-elevation-1);
+}
+
+.settings-header {
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 2px solid var(--md-sys-color-outline-variant);
+}
+
+.settings-header h2 {
+    font: var(--md-sys-typescale-headline-medium);
+    color: var(--md-sys-color-on-surface);
+    margin-bottom: var(--space-sm);
+}
+
+.settings-header p {
+    font: var(--md-sys-typescale-body-medium);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.settings-section {
+    margin-bottom: var(--space-2xl);
+    padding: var(--space-xl);
+    background: var(--md-sys-color-background);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.settings-section h3 {
+    font: var(--md-sys-typescale-title-large);
+    color: var(--md-sys-color-primary);
+    margin-bottom: var(--space-md);
+}
+
+.section-description {
+    font: var(--md-sys-typescale-body-medium);
+    color: var(--md-sys-color-on-surface-variant);
+    margin-bottom: var(--space-lg);
+}
+
+/* Custom Stops Grid */
+.custom-stops-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.custom-stop-card {
+    background: var(--md-sys-color-surface);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--md-sys-color-outline-variant);
+    transition: all var(--transition-medium);
+}
+
+.custom-stop-card:hover {
+    border-color: var(--md-sys-color-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--md-sys-elevation-2);
+}
+
+.custom-stop-card .card-icon {
+    font-size: 32px;
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+.custom-stop-card label {
+    display: block;
+    font: var(--md-sys-typescale-label-large);
+    color: var(--md-sys-color-on-surface);
+    margin-bottom: var(--space-sm);
+    font-weight: 700;
+}
+
+/* Settings Buttons */
+.settings-button {
+    background: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    border: none;
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--radius-full);
+    font: var(--md-sys-typescale-label-large);
+    cursor: pointer;
+    transition: all var(--transition-medium);
+    box-shadow: var(--md-sys-elevation-1);
+}
+
+.settings-button:hover {
+    background: var(--md-sys-color-tertiary);
+    color: var(--md-sys-color-on-tertiary);
+    transform: translateY(-1px);
+    box-shadow: var(--md-sys-elevation-2);
+}
+
+.settings-button:active {
+    transform: translateY(0);
+}
+
+.settings-button.secondary {
+    background: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
+}
+
+.settings-button.danger {
+    background: var(--md-sys-color-error);
+    color: var(--md-sys-color-on-error);
+}
+
+/* Add Favorite Section */
+.add-favorite {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.add-favorite select {
+    flex: 1;
+}
+
+/* Favorites List */
+.favorites-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.favorite-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md) var(--space-lg);
+    background: var(--md-sys-color-surface);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-medium);
+}
+
+.favorite-item:hover {
+    border-color: var(--md-sys-color-primary);
+    box-shadow: var(--md-sys-elevation-1);
+}
+
+.favorite-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.favorite-icon {
+    font-size: 20px;
+}
+
+.favorite-name {
+    font: var(--md-sys-typescale-body-large);
+    color: var(--md-sys-color-on-surface);
+    font-weight: 500;
+}
+
+.favorite-remove {
+    background: var(--md-sys-color-error-container);
+    color: var(--md-sys-color-on-error-container);
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    font: var(--md-sys-typescale-label-large);
+    cursor: pointer;
+    transition: all var(--transition-medium);
+}
+
+.favorite-remove:hover {
+    background: var(--md-sys-color-error);
+    color: var(--md-sys-color-on-error);
+}
+
+.empty-state {
+    text-align: center;
+    padding: var(--space-xl);
+    color: var(--md-sys-color-on-surface-variant);
+    font-style: italic;
+}

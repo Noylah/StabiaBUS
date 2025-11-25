@@ -1,0 +1,17 @@
+{
+    "name": "StabiaBUS",
+    "short_name": "StabiaBUS",
+    "description": "Orari Pullman Castellammare di Stabia - Lettere",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1a237e",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "StabiaBUS BGRM.png",
+            "sizes": "500x500",
+            "type": "image/png"
+        }
+    ]
+}
