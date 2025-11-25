@@ -758,14 +758,26 @@ body.dark-theme .form-time:hover {
     color: var(--md-sys-color-on-background);
 }
 
+/* Results Table Container (Scrollable on Mobile) */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+    margin-bottom: var(--space-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--md-sys-color-outline-variant);
+}
+
 /* Results Table */
 .results-table {
     width: 100%;
     border-collapse: collapse;
     background: var(--md-sys-color-surface);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--md-sys-elevation-1);
+    /* border-radius rimosso qui perché gestito dal container */
+    /* overflow: hidden rimosso qui */
+    min-width: 600px;
+    /* Assicura che la tabella non si schiacci troppo */
 }
 
 .results-table thead {
