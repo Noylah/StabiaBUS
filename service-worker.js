@@ -1,4 +1,4 @@
-const CACHE_NAME = 'stabiabus-v3';
+const CACHE_NAME = 'stabiabus-v4';
 const ASSETS_TO_CACHE = [
     './',
     './index.html',
